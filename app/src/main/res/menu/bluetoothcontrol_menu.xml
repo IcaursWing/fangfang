@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_NET"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:title="NET" />
+
+    <item
+        android:id="@+id/menu_NEU"
+        android:orderInCategory="101"
+        android:showAsAction="always|withText"
+        android:title="NEU" />
+
+</menu>

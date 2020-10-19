@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_question">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/Titlebar_questiongame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:tb_leftImageResource="@drawable/xui_ic_navigation_back_white"
+        app:tb_sideTextPadding="5dp"
+        app:tb_titleText="趣味知识竞赛"
+        app:tb_titleTextColor="@color/xui_config_color_white"
+        app:tb_useThemeColor="false" />
+
+    <TextView
+        android:id="@+id/TextView_questiongame_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="210dp"
+        android:text="第1题"
+        android:textColor="@color/white"
+        android:textSize="18pt"
+        android:visibility="gone" />
+
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        android:id="@+id/RoundButton_questiongame_competition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="15dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="15dp"
+        android:text="竞赛模式"
+        android:textColor="@android:color/white"
+        android:textSize="10pt"
+        android:visibility="visible"
+        app:rb_backgroundColor="@color/xui_round_btn_transparent_bg"
+        app:rb_borderColor="@color/xui_round_btn_blue_bg"
+        app:rb_borderWidth="3dp"
+        app:rb_radius="50dp" />
+
+
+    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
+        android:id="@+id/RoundButton_questiongame_exercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:paddingLeft="40dp"
+        android:paddingTop="15dp"
+        android:paddingRight="40dp"
+        android:paddingBottom="15dp"
+        android:text="练习模式"
+        android:textColor="@android:color/white"
+        android:textSize="10pt"
+        android:visibility="visible"
+        app:rb_backgroundColor="@color/xui_round_btn_transparent_bg"
+        app:rb_borderColor="@color/xui_round_btn_blue_bg"
+        app:rb_borderWidth="3dp"
+        app:rb_radius="50dp" />
+
+    <TextView
+        android:id="@+id/TextView_questiongame_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="倒计时 10"
+        android:textColor="@android:color/white"
+        android:textSize="18pt"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextView_questiongame_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="题目\nA 选项A\nB 选项B\nC 选项C\nD 选项D\n"
+        android:textColor="@android:color/white"
+        android:textSize="12pt"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+
+        <com.xuexiang.xui.widget.button.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:rv_rippleDuration="0"
+            app:rv_zoom="true"
+            app:rv_zoomDuration="100"
+            app:rv_zoomScale="0.7">
+
+            <ImageButton
+                android:id="@+id/ImageButton_question_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/button_refresh"
+                android:visibility="invisible" />
+
+        </com.xuexiang.xui.widget.button.RippleView>
+
+        <com.xuexiang.xui.widget.button.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:rv_rippleDuration="0"
+            app:rv_zoom="true"
+            app:rv_zoomDuration="100"
+            app:rv_zoomScale="0.7">
+
+            <ImageButton
+                android:id="@+id/imagebutton_question_next"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/button_next"
+                android:visibility="invisible" />
+        </com.xuexiang.xui.widget.button.RippleView>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+
+    <com.xuexiang.xui.widget.imageview.RadiusImageView
+        android:id="@+id/imagevie_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="3"
+        android:src="@drawable/gametable"
+        app:riv_corner_radius="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+
+        <TextView
+            android:id="@+id/textView_main_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="舒尔特竞赛"
+            android:textColor="@color/black"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/textView_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="培养孩子注意力的指向性、集中性和抗干扰性，相对延长注意力集中的时间。"
+            android:textColor="@color/xui_config_color_gray_2"
+            android:textSize="6pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/textView_main_tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                app:sCenterSpaceHeight="5dp"
+                app:sCenterTextColor="@color/white"
+                app:sCenterTextSize="4pt"
+                app:sCenterTextString="5-18岁"
+                app:sShapeCornersRadius="5dp"
+                app:sShapeSelectorNormalColor="@color/design_default_color_primary"
+                app:sUseShape="true" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/textView_main_tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                app:sCenterSpaceHeight="5dp"
+                app:sCenterTextColor="@color/white"
+                app:sCenterTextSize="4pt"
+                app:sCenterTextString="趣味性强"
+                app:sShapeCornersRadius="5dp"
+                app:sShapeSelectorNormalColor="@color/colorAccent"
+                app:sUseShape="true" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/textView_main_tag3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                app:sCenterSpaceHeight="5dp"
+                app:sCenterTextColor="@color/white"
+                app:sCenterTextSize="4pt"
+                app:sCenterTextString="注意力训练"
+                app:sShapeCornersRadius="5dp"
+                app:sShapeSelectorNormalColor="@color/xui_config_color_blue"
+                app:sUseShape="true" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

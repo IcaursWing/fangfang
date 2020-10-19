@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="TimeCount">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="TableTime">
+        <item>倒计时 1秒 成绩排行榜</item>
+        <item>倒计时 2秒 成绩排行榜</item>
+        <item>倒计时 3秒 成绩排行榜</item>
+        <item>倒计时 4秒 成绩排行榜</item>
+        <item>倒计时 5秒 成绩排行榜</item>
+        <item>倒计时 6秒 成绩排行榜</item>
+        <item>倒计时 7秒 成绩排行榜</item>
+        <item>倒计时 8秒 成绩排行榜</item>
+        <item>倒计时 9秒 成绩排行榜</item>
+        <item>倒计时 10秒 成绩排行榜</item>
+        <item>倒计时 11–15秒 成绩排行榜</item>
+        <item>倒计时 16–20秒 成绩排行榜</item>
+        <item>倒计时 20秒以上 成绩排行榜</item>
+    </string-array>
+
+    <string-array name="TableTime2">
+        <item>1秒</item>
+        <item>2秒</item>
+        <item>3秒</item>
+        <item> 4秒</item>
+        <item>5秒</item>
+        <item> 6秒</item>
+        <item> 7秒</item>
+        <item> 8秒</item>
+        <item> 9秒</item>
+        <item> 10秒</item>
+        <item> 11–15秒</item>
+        <item> 16–20秒</item>
+        <item> 20秒以上</item>
+    </string-array>
+
+</resources>

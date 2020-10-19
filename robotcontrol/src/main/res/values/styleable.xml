@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BatteryView">
+        <attr name="BatteryView_bat_src" format="reference" />
+        <attr name="BatteryView_bat_src_less" format="reference" />
+    </declare-styleable>
+
+</resources>

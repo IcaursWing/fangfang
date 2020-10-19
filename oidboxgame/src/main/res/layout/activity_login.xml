@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:layoutAnimation="@null">
+
+
+    <ImageView
+        android:id="@+id/iv_login_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="30dp"
+
+        android:src="@mipmap/oidboxicon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="登录"
+        android:textColor="@color/xui_config_color_black"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_login_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_login_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_login_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="60dp"
+            android:text="未注册？去注册！"
+            android:textColor="@color/xui_config_color_red"
+            android:textSize="15sp" />
+
+        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+            android:id="@+id/btn_login_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="#1bbdad"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="登录"
+            android:textColor="@color/xui_config_color_white"
+            android:textSize="20sp"
+            app:sb_alpha_pressed="0"
+            app:sb_color_pressed="#1dd3c1"
+            app:sb_color_unpressed="#1db7a8"
+            app:sb_radius="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

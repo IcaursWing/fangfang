@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_IOT_Camera1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第一个监测点IP地址："
+        android:textSize="12pt" />
+
+    <TextView
+        android:id="@+id/et_IOT_Camera1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="192.168.1.1"
+        android:textColor="@android:color/black"
+        android:textSize="12pt" />
+
+    <TextView
+        android:id="@+id/tv_IOT_Camera2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第二个监测点IP地址："
+        android:textSize="12pt" />
+
+    <EditText
+        android:id="@+id/et_IOT_Camera2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="无效！备用。"
+        android:textSize="12pt" />
+
+    <Button
+        android:id="@+id/bt_IOT_Camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始监测"
+        android:textSize="12pt" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/lv_background"
+    android:orientation="vertical">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/listview_mutiblue_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tb_actionPadding="20dp"
+        app:tb_centerGravity="left"
+        app:tb_leftImageResource="@mipmap/oidboxicon"
+        app:tb_titleText="听小方"
+        app:tb_useThemeColor="false"
+        android:background="@color/app_color_theme_5"/>
+
+    <ListView
+        android:id="@+id/listview_mutiblue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:scrollbars="none" />
+
+
+</LinearLayout>

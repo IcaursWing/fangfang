@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_page" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="发现精彩"
+            android:textColor="@color/white"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/everyday_play" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/imageview_instruction1_main3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/fang_intro"
+                    app:riv_border_color="@color/xui_config_color_gray_6"
+                    app:riv_border_width="5dp"
+                    app:riv_corner_radius="10dp"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_4"
+                    app:riv_selected_border_width="5dp"
+                    app:riv_selected_mask_color="@color/xui_config_color_gray_8" />
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/imageview_instruction2_main3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/program_map"
+                    app:riv_border_color="@color/xui_config_color_gray_6"
+                    app:riv_border_width="5dp"
+                    app:riv_corner_radius="10dp"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_4"
+                    app:riv_selected_border_width="5dp"
+                    app:riv_selected_mask_color="@color/xui_config_color_gray_8" />
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/imageview_instruction3_main3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/study_card"
+                    app:riv_border_color="@color/xui_config_color_gray_6"
+                    app:riv_border_width="5dp"
+                    app:riv_corner_radius="10dp"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_4"
+                    app:riv_selected_border_width="5dp"
+                    app:riv_selected_mask_color="@color/xui_config_color_gray_8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="日常使用说明"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="编程地图"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="认知卡片"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/imageview_instruction4_main3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/nine_table"
+                    app:riv_border_color="@color/xui_config_color_gray_6"
+                    app:riv_border_width="5dp"
+                    app:riv_corner_radius="10dp"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_4"
+                    app:riv_selected_border_width="5dp"
+                    app:riv_selected_mask_color="@color/xui_config_color_gray_8" />
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/imageview_instruction5_main3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/ai_piano"
+                    app:riv_border_color="@color/xui_config_color_gray_6"
+                    app:riv_border_width="5dp"
+                    app:riv_corner_radius="10dp"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_4"
+                    app:riv_selected_border_width="5dp"
+                    app:riv_selected_mask_color="@color/xui_config_color_gray_8" />
+
+                <com.xuexiang.xui.widget.imageview.RadiusImageView
+                    android:id="@+id/imageview_instruction6_main3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/table_card"
+                    app:riv_border_color="@color/xui_config_color_gray_6"
+                    app:riv_border_width="5dp"
+                    app:riv_corner_radius="10dp"
+                    app:riv_selected_border_color="@color/xui_config_color_gray_4"
+                    app:riv_selected_border_width="5dp"
+                    app:riv_selected_mask_color="@color/xui_config_color_gray_8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="空白九宫格"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="电子钢琴"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="舒尔特数字卡"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/supertextview_tablerank_main3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:sDividerLineType="top"
+                app:sLeftIconRes="@drawable/ic_rank"
+                app:sLeftTextString="舒尔特排行榜"
+                app:sRightIconRes="@drawable/ic_arrow_right_gray"
+                app:sRightTextString="详细成绩" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/supertextview_gamerecord_main3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:sDividerLineType="top"
+                app:sLeftIconRes="@drawable/ic_gamebar"
+                app:sLeftTextString="最近游戏"
+                app:sRightIconRes="@drawable/ic_arrow_right_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+     Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/BlueBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/BlueBar"
+                    android:src="@drawable/blue_bar" />
+
+                <ImageButton
+                    android:id="@+id/ExitBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/ExitBar"
+                    android:src="@drawable/exit_com" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/MedKit"
+                    android:layout_width="49dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/MedKit"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/med_kit"
+                    android:visibility="visible" />
+
+                <CheckBox
+                    android:id="@+id/broadcast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/BroadCast"
+                    android:text="@string/BroadCast"
+                    android:visibility="visible" />
+
+                <ImageButton
+                    android:id="@+id/blue_chat"
+                    android:layout_width="41dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/blue_chat"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/blue_chat" />
+
+                <ImageButton
+                    android:id="@+id/blue_actionid"
+                    android:layout_width="41dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/blue_chat"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/blue_actionid" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:id="@+id/button_teach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="教程" />
+
+                <ImageButton
+                    android:id="@+id/GrayTetrapod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayTetrapod"
+                    android:src="@drawable/gray_tetrapod" />
+
+                <ImageButton
+                    android:id="@+id/GraySit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/GrayCube"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GraySit"
+                    android:src="@drawable/gray_sit" />
+
+                <ImageButton
+                    android:id="@+id/GrayHumanoid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/GraySit"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/GraySit"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayHumanoid"
+                    android:src="@drawable/gray_humanoid" />
+
+                <ImageButton
+                    android:id="@+id/GrayCube"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/GrayHumanoid"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayCube"
+                    android:src="@drawable/gray_cube" />
+
+                <ImageButton
+                    android:id="@+id/GrayLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="40dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayLeft"
+                    android:src="@drawable/gray_left" />
+
+                <ImageButton
+                    android:id="@+id/GrayRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/GrayLeft"
+                    android:layout_marginLeft="78dp"
+                    android:layout_toRightOf="@+id/GrayLeft"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayRight"
+                    android:src="@drawable/gray_right" />
+
+                <ImageButton
+                    android:id="@+id/GrayUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/GrayHumanoid"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toRightOf="@+id/GrayLeft"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayUp"
+                    android:src="@drawable/gray_up" />
+
+                <ImageButton
+                    android:id="@+id/GrayDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/GrayUp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayDown"
+                    android:src="@drawable/gray_down" />
+
+                <ImageButton
+                    android:id="@+id/GrayClimb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/GrayCube"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayClimb"
+                    android:src="@drawable/gray_climb"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/GrayRelease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/GrayHumanoid"
+                    android:layout_alignLeft="@+id/GrayClimb"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayRelease"
+                    android:src="@drawable/gray_release"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/GrayTakeHi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/GrayRight"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@+id/GrayRelease"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayTakeHi"
+                    android:src="@drawable/gray_takehi"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/GrayTakeLow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/GrayTakeHi"
+                    android:layout_marginTop="7dp"
+                    android:layout_toLeftOf="@+id/GrayClimb"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayTakeLow"
+                    android:src="@drawable/gray_takelow"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/GrayHit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/GrayHumanoid"
+                    android:layout_marginBottom="7dp"
+                    android:layout_toRightOf="@+id/GrayTakeHi"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/GrayHit"
+                    android:src="@drawable/gray_hit"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/BlueDance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/GrayCube"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/GrayCube"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/BlueDance"
+                    android:src="@drawable/blue_dance"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

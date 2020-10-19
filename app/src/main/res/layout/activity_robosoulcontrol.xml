@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="30dp"
+            android:max="100"
+            android:progress="50"
+            android:secondaryProgress="75" />
+
+        <ImageView
+            android:id="@+id/robo_bat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="28dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:src="@drawable/bat" />
+
+        <ImageView
+            android:id="@+id/robo_dance"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/dance_bg" />
+
+        <ImageView
+            android:id="@+id/robo_stand"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="15dip"
+            android:layout_marginBottom="15dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/stand_up_bg" />
+
+        <ImageButton
+            android:id="@+id/robo_hand"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="20dip"
+            android:layout_marginBottom="20dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/hand_shake_bg" />
+
+        <ImageView
+            android:id="@+id/robo_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="55dip"
+            android:paddingLeft="100dip"
+            android:src="@drawable/more_bg" />
+
+        <ImageView
+            android:id="@+id/robo_bow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="140dip"
+            android:layout_marginBottom="15dip"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/robo_fly"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="80dip"
+            android:layout_marginBottom="90dip"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/robo_squat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="20dip"
+            android:layout_marginBottom="145dip"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/robo_lie"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="140dip"
+            android:layout_marginBottom="75dip"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/robo_sit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="80dip"
+            android:layout_marginBottom="150dip"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/robo_shake"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="20dip"
+            android:layout_marginBottom="205dip"
+            android:background="@drawable/btn_bg"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/robo_stand_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="27dp"
+            android:text="立正"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/robo_bow_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="150dip"
+            android:layout_marginBottom="30dip"
+            android:text="鞠躬"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/robo_lie_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="151dip"
+            android:layout_marginBottom="92dip"
+            android:text="俯卧撑"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/robo_fly_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="91dip"
+            android:layout_marginBottom="110dip"
+            android:text="大鹏展翅"
+            android:textColor="#FFFFFF"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/robo_sit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="91dip"
+            android:layout_marginBottom="170dip"
+            android:text="仰卧起坐"
+            android:textColor="#FFFFFF"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/robo_squat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="31dip"
+            android:layout_marginBottom="160dip"
+            android:text="下蹲"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/robo_shake_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/robo_shake"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="31dip"
+            android:layout_marginBottom="220dip"
+            android:text="招手"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+
+        <ImageButton
+            android:id="@+id/robo_stand_button"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="15dip"
+            android:layout_marginBottom="15dip"
+
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/stand_up" />
+
+        <ImageButton
+            android:id="@+id/robo_more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="55dip"
+            android:background="@color/transparent"
+            android:paddingLeft="100dip"
+            android:src="@drawable/more" />
+
+        <ImageButton
+            android:id="@+id/robo_bow_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="140dip"
+            android:layout_marginBottom="15dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn" />
+
+        <ImageButton
+            android:id="@+id/robo_fly_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="80dip"
+            android:layout_marginBottom="90dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn" />
+
+        <ImageButton
+            android:id="@+id/robo_squat_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="20dip"
+            android:layout_marginBottom="145dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn" />
+
+        <ImageButton
+            android:id="@+id/robo_lie_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="140dip"
+            android:layout_marginBottom="75dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn" />
+
+        <ImageButton
+            android:id="@+id/robo_sit_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="80dip"
+            android:layout_marginBottom="150dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn" />
+
+        <ImageButton
+            android:id="@+id/robo_shake_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="20dip"
+            android:layout_marginBottom="205dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn" />
+
+        <ImageButton
+            android:id="@+id/robo_dance_button"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/dance" />
+
+        <ImageButton
+            android:id="@+id/robo_bluetooth"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/disconnect_4" />
+
+        <ImageView
+            android:id="@+id/robo_man"
+            android:layout_width="79dp"
+            android:layout_height="79dp"
+            android:layout_marginStart="70dip"
+            android:layout_marginTop="40dip"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/man" />
+
+        <Switch
+            android:id="@+id/robo_man_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dip"
+            android:layout_marginTop="120dip"
+            android:text="单台控制"
+            android:textColor="#FFFFFF"
+            android:textOff="       "
+            android:textOn="        "
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="65dip"
+            android:paddingLeft="110dip"
+            android:text="其他动作"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/robo_up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="70dip"
+            android:layout_marginBottom="110dip"
+            android:alpha="0.8"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/scroll_ball_up" />
+
+        <ImageButton
+            android:id="@+id/robo_down"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="70dip"
+            android:layout_marginBottom="30dip"
+            android:alpha="0.8"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/scroll_ball_down" />
+
+        <ImageButton
+            android:id="@+id/robo_left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="30dip"
+            android:layout_marginBottom="70dip"
+            android:alpha="0.8"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/scroll_ball_left" />
+
+        <ImageButton
+            android:id="@+id/robo_right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="110dip"
+            android:layout_marginBottom="70dip"
+            android:alpha="0.8"
+            android:background="@color/transparent"
+            android:contentDescription="@string/RoboSoul"
+            android:scaleType="centerInside"
+            android:src="@drawable/scroll_ball_right" />
+
+    </FrameLayout>
+
+</FrameLayout>

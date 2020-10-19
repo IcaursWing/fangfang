@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleSeekBar">
+        <attr name="android:thumb" />
+        <attr name="progress_width" format="dimension" />
+        <attr name="progress_background" format="color" />
+        <attr name="progress_front" format="color" />
+        <attr name="progress_max" format="integer" />
+        <attr name="show_progress_text" format="boolean" />
+        <attr name="progress_text_stroke_width" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_size" format="dimension" />
+    </declare-styleable>
+
+    <string-array name="che_list">
+        <item>车1</item>
+        <item>车2</item>
+        <item>车3</item>
+        <item>车4</item>
+        <item>车5</item>
+        <item>车6</item>
+        <item>车7</item>
+        <item>车8</item>
+        <item>车9</item>
+        <item>车10</item>
+        <item>车11</item>
+        <item>车12</item>
+        <item>车13</item>
+        <item>车14</item>
+        <item>车15</item>
+        <item>车16</item>
+        <item>车17</item>
+        <item>车18</item>
+        <item>车19</item>
+        <item>车20 </item>
+    </string-array>
+
+    <string-array name="action_list">
+        <item>抓1</item>
+        <item>抓2</item>
+        <item>抓3</item>
+    </string-array>
+
+    <string-array name="LED_list">
+        <item>光照强度&lt;20</item>
+        <item>20&lt;光照强度&lt;100</item>
+        <item>100&lt;光照强度&lt;300</item>
+        <item>300&lt;光照强度&lt;400</item>
+        <item>光照强度&gt;400</item>
+    </string-array>
+
+    <string-array name="car_list">
+        <item>car1</item>
+        <item>car2</item>
+        <item>car3</item>
+    </string-array>
+
+
+</resources>

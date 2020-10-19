@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xui_config_color_light_blue"
+    android:orientation="vertical">
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/titlebar_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_light_blue"
+        app:tb_leftImageResource="@drawable/xui_ic_navigation_back_white"
+        app:tb_titleText="最近游戏"
+        app:tb_titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:id="@+id/bt_Records_Game"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="舒尔特竞赛"
+            android:textSize="20dp"
+            app:textLeftBottomRadius="20dp"
+            app:textLeftTopRadius="20dp"
+            app:textNormalTextColor="@color/xui_config_color_light_blue"
+            app:textSelectedSolidColor="@color/xui_config_color_light_blue"
+            app:textSelectedTextColor="@color/white"
+            app:textSolidColor="@color/white"
+            app:textStrokeColor="@color/white"
+            app:textStrokeWidth="1dp" />
+
+        <com.xuexiang.xui.widget.button.ButtonView
+            android:id="@+id/bt_Records_More"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingStart="20dp"
+
+            app:drawableStartCompat="@drawable/icon_more_white"
+            app:textRightBottomRadius="20dp"
+            app:textRightTopRadius="20dp"
+            app:textSelectedSolidColor="@color/xui_config_color_gray_9"
+            app:textSolidColor="@color/xui_config_color_light_blue"
+            app:textStrokeColor="@color/white"
+            app:textStrokeWidth="1dp" />
+
+
+    </LinearLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshlayout_records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_light_blue">
+
+
+        <com.yanzhenjie.recyclerview.SwipeRecyclerView
+            android:id="@+id/recyclerview_records"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            tools:listitem="@layout/listitem_main3_records"
+
+            />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="XUITheme.Phone">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--窗体背景，这个背景能在第一时间显示, 避免启动时白屏，黑屏问题-->
+    <style name="XUITheme.Launch.App">
+        <item name="android:windowBackground">@mipmap/splashactivity</item>
+        <!--注意修改图标-->
+        <item name="xui_config_splash_app_logo">@mipmap/splashsctivityfang</item>
+        <item name="xui_config_splash_company_logo">@mipmap/fufang</item>
+    </style>
+
+</resources>

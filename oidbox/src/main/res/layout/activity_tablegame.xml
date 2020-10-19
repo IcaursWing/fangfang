@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_table">
+
+
+    <com.xuexiang.xui.widget.button.RippleView
+        android:id="@+id/rippleview_table_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:rv_rippleDuration="0"
+        app:rv_zoom="true"
+        app:rv_zoomDuration="100"
+        app:rv_zoomScale="0.7">
+
+        <ImageButton
+            android:id="@+id/imagebutton_table_exit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/button_exit" />
+    </com.xuexiang.xui.widget.button.RippleView>
+
+    <com.xuexiang.xui.widget.button.RippleView
+        android:id="@+id/rippleview_table_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rippleview_table_1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        app:rv_rippleDuration="0"
+        app:rv_zoom="true"
+        app:rv_zoomDuration="100"
+        app:rv_zoomScale="0.7">
+
+        <ImageButton
+            android:id="@+id/imagebutton_table_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/button_refresh" />
+
+    </com.xuexiang.xui.widget.button.RippleView>
+
+    <com.xuexiang.xui.widget.button.RippleView
+        android:id="@+id/rippleview_table_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rippleview_table_2"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/rippleview_table_2"
+        app:rv_rippleDuration="0"
+        app:rv_zoom="true"
+        app:rv_zoomDuration="100"
+        app:rv_zoomScale="0.7">
+
+        <ImageButton
+            android:id="@+id/imagebutton_table_result"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/button_result"
+            android:visibility="gone" />
+
+
+    </com.xuexiang.xui.widget.button.RippleView>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_tablegame_timeinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rippleview_table_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="观察倒计时"
+            android:textColor="@color/white"
+            android:textSize="15pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_table_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="50pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_tablegame_timeset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.xuexiang.xui.widget.button.switchbutton.SwitchButton
+            android:id="@+id/switchbutton_gametime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:swb_animationDuration="300"
+            app:swb_backDrawable="@drawable/ios_back_drawable"
+            app:swb_thumbDrawable="@mipmap/button_default"
+            app:swb_thumbHeight="40dp"
+            app:swb_thumbMarginBottom="0dp"
+            app:swb_thumbMarginLeft="0dp"
+            app:swb_thumbMarginRight="0dp"
+            app:swb_thumbMarginTop="0dp"
+            app:swb_thumbRangeRatio="1.4"
+            app:swb_thumbWidth="100dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:text="设置计时时间"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/supertextview_tabletimeset"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/xui_config_color_gray_7"
+                android:clickable="false"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                app:sCenterTextColor="@color/black"
+                app:sCenterTextSize="8pt"
+                app:sCenterTextString="5"
+                app:sCenterViewGravity="center"
+                app:sShapeCornersRadius="10dp"
+                app:sUseShape="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:text="秒"
+                android:textColor="@color/white"
+                android:textSize="8pt" />
+
+        </LinearLayout>
+
+
+        <com.xuexiang.xui.widget.button.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:rv_rippleDuration="0"
+            app:rv_zoom="true"
+            app:rv_zoomDuration="100"
+            app:rv_zoomScale="0.7">
+
+            <ImageButton
+                android:id="@+id/imagebutton_table_start"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@mipmap/button_start" />
+
+        </com.xuexiang.xui.widget.button.RippleView>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/framelayout_tablegame_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="-50dp"
+            android:layout_marginEnd="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/background_tablenumber" />
+
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_tablegame_table1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="30pt" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textview_tablegame_table2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="30pt" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textview_tablegame_table3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="30pt" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_tablegame_table4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="30pt" />
+
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textview_tablegame_table5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="30pt" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textview_tablegame_table6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="30pt" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textview_tablegame_table7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textColor="@color/white"
+                    android:textSize="30pt" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textview_tablegame_table8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textColor="@color/white"
+                    android:textSize="30pt" />
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:id="@+id/textview_tablegame_table9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textColor="@color/white"
+                    android:textSize="30pt" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

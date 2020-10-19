@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/programfang_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="11dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/scroll_ball_down" />
+
+    <ImageButton
+        android:id="@+id/programfang_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="81dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/scroll_ball_left" />
+
+    <ImageButton
+        android:id="@+id/programfang_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginBottom="143dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/scroll_ball_up" />
+
+    <ImageButton
+        android:id="@+id/programfang_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="227dp"
+        android:layout_marginBottom="81dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/scroll_ball_right" />
+
+    <ImageButton
+        android:id="@+id/programfang_handup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="147dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ball2" />
+
+    <ImageButton
+        android:id="@+id/programfang_handdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ball2" />
+
+    <TextView
+        android:id="@+id/programfang_tv_handup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/programfang_handup"
+        android:layout_alignBottom="@+id/programfang_handup"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="31dp"
+        android:text="抬头"
+        android:textColor="@color/defaultColor"
+        android:textSize="15pt" />
+
+    <TextView
+        android:id="@+id/programfang_tv_handdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/programfang_handdown"
+        android:layout_alignBottom="@+id/programfang_handdown"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="29dp"
+        android:text="低头"
+        android:textColor="@color/defaultColor"
+        android:textSize="15pt" />
+</RelativeLayout>

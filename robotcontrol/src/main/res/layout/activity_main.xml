@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/start" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/startBg" android:layout_width="@dimen/x300" android:layout_height="@dimen/x74" android:src="@drawable/ball1" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/ball2" android:layout_width="@dimen/x41" android:layout_height="@dimen/x40" android:src="@drawable/ball2" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+</RelativeLayout>

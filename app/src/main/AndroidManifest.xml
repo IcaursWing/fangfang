@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fangfang_gai"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
+    <!-- 允许程序打开网络套接字 -->
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <!-- 允许挂载和反挂载文件系统可移动存储 -->
+    <!--
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    -->
+    <!-- SD卡权限 -->
+    <!-- <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission> -->
+    <!-- 音频 -->
+    <supports-screens android:anyDensity="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.example.main.MainActivity"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.main.DeviceScanActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.RoboSoulConnect"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.DeviceScanDownloadActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.MutiBluetoothConnectActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.MutiBluetoothControlActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.ProgramFang"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.ProgramFangControl"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.MutiFangfang"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.MutiFangfangControl"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+        <activity
+            android:name="com.example.main.MutiBluetoothPress"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.House"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.HouseTest"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.OidBoxGame"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.OidBoxCollect"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.HongzhengName"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.OidBoxGameConnect"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.OidBoxGameTable"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.example.main.OidBoxGameQuestion"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.example.main.OidBoxGameMusic"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.lee.circleseekbar.select_color"
+            android:label="请选择你的颜色"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.lee.circleseekbar.LocalMusicActivity"
+            android:label="请选择你的颜色"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.lee.circleseekbar.PlayMusicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.net.player.InternetMusicActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="org.music.service.LocalMusicService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="org.music.service.LocalMusicService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="org.net.player.Internet_help"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.example.ble.BluetoothLeService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.example.jdy_touchuang.shengjiangji"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.example.jdy_touchuang.jdy_Activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.example.jdy_touchuang.jdy_switch_Activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.example.jdy_touchuang.AV_Stick"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.sensor.jdy_ibeacon_Activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.example.sensor.jdy_sensor_temp_Activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name="com.lee.circleseekbar.MainActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name="com.example.set.set" />
+        <activity
+            android:name="com.karics.library.zxing.android.CaptureActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.example.main.ControlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.main.ControlActivityTest"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.example.main.RoboSoulControl"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name="com.example.main.yaokongchetest"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity
+            android:name="com.example.main.yaokongche"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity android:name="com.yzq.zxing.FragmentActivity" />
+        <activity
+            android:name="com.yanzhenjie.permission.bridge.BridgeActivity"
+            android:theme="@style/Permission.Theme" />
+        <activity
+            android:name="com.yzq.zxinglibrary.android.CaptureActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.example.main.DownloadActivity"
+            android:label="@string/title_activity_download"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.IotCamera"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:taskAffinity="android.task.camera"
+            android:theme="@android:style/Theme.DeviceDefault.Light" />
+        <activity
+            android:name="com.example.main.IotCamera_On"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:taskAffinity="android.task.camera"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar" />
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="360" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.fangfang"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

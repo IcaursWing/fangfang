@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/kit_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/kit_release"
+        android:src="@drawable/kit_release" />
+
+    <ImageButton
+        android:id="@+id/kit_restore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/kit_restore"
+        android:src="@drawable/kit_restore" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/kitcube"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/MedKit"
+                android:scaleType="centerInside"
+                android:src="@drawable/blue_cube" />
+
+            <ImageButton
+                android:id="@+id/kithumanoid"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/MedKit"
+                android:scaleType="centerInside"
+                android:src="@drawable/blue_humanoid" />
+
+            <ImageButton
+                android:id="@+id/kitsit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/MedKit"
+                android:scaleType="centerInside"
+                android:src="@drawable/blue_sit" />
+
+            <ImageButton
+                android:id="@+id/kittetrapod"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/MedKit"
+                android:scaleType="centerInside"
+                android:src="@drawable/blue_tetrapod" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/kitcube1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="60dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/MedKit"
+                android:scaleType="centerInside"
+                android:src="@drawable/aid" />
+
+            <ImageView
+                android:id="@+id/kithumanoid1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="35dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/MedKit"
+                android:scaleType="centerInside"
+                android:src="@drawable/aid" />
+
+            <ImageView
+                android:id="@+id/kitsit1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="35dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/MedKit"
+                android:scaleType="centerInside"
+                android:src="@drawable/aid" />
+
+            <ImageView
+                android:id="@+id/kittetrapod1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="35dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/MedKit"
+                android:scaleType="centerInside"
+                android:src="@drawable/aid" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

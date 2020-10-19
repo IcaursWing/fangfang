@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x10" android:text="@string/set_workmode" style="@style/title_style" />
+        <View android:background="@color/colorTitleBlue" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/normal_mode" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/x60" android:layout_height="@dimen/x60" android:src="@drawable/normal_btn" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/normal_mode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/normal_mode" android:layout_below="@id/normal_mode" android:layout_centerHorizontal="true" style="@style/btn_text_style" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/football_mode" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/x60" android:layout_height="@dimen/x60" android:src="@drawable/football_btn" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/football_mode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/football_mode" android:layout_below="@id/football_mode" android:layout_centerHorizontal="true" style="@style/btn_text_style" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/fight_mode" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/x60" android:layout_height="@dimen/x60" android:src="@drawable/fight_btn" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/fight_mode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fight_mode" android:layout_below="@id/fight_mode" android:layout_centerHorizontal="true" style="@style/btn_text_style" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

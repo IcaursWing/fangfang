@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_OidBoxMusic_yin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="音节"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_OidBoxMusic_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始创作"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_OidBoxMusic_midi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单音播放"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_OidBoxMusic_mp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="和弦播放"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_OidBoxMusic_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+</LinearLayout>

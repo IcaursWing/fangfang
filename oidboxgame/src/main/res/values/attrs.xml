@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="TableTime">
+        <item>倒计时 1秒 成绩排行榜</item>
+        <item>倒计时 2秒 成绩排行榜</item>
+        <item>倒计时 3秒 成绩排行榜</item>
+        <item>倒计时 4秒 成绩排行榜</item>
+        <item>倒计时 5秒 成绩排行榜</item>
+        <item>倒计时 6秒 成绩排行榜</item>
+        <item>倒计时 7秒 成绩排行榜</item>
+        <item>倒计时 8秒 成绩排行榜</item>
+        <item>倒计时 9秒 成绩排行榜</item>
+        <item>倒计时 10秒 成绩排行榜</item>
+        <item>倒计时 11–15秒 成绩排行榜</item>
+        <item>倒计时 16–20秒 成绩排行榜</item>
+        <item>倒计时 20秒以上 成绩排行榜</item>
+    </string-array>
+
+    <dimen name="one_grid_unit">12dp</dimen>
+
+</resources>

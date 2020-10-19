@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/add_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x10" style="@style/title_style" />
+        <View android:background="@color/colorTitleBlue" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <EditText android:textColorHint="@color/colorWhite" android:id="@id/dance_add_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" style="@style/switch_text_style" />
+        <EditText android:textColorHint="@color/colorWhite" android:id="@id/dance_add_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:inputType="number" style="@style/switch_text_style" />
+    </LinearLayout>
+    <View android:background="@color/colorTitleBlue" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/x3" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:textSize="@dimen/y9" android:textColor="@color/colorTitleBlue" android:id="@id/add_dance_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" android:textAllCaps="false" style="?android:buttonBarButtonStyle" />
+        <View android:id="@id/dialog_divider" android:background="@color/colorTitleBlue" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/y9" android:textColor="@color/colorTitleBlue" android:id="@id/add_dance_ok" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ok" android:layout_weight="1.0" android:textAllCaps="false" style="?android:buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

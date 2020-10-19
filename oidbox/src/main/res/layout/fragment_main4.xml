@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageview_main4_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/title_main4" />
+
+        <ImageButton
+            android:id="@+id/imagebutton_main4_setting"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/imagebutton_click"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/icon_setting" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout_info_main4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+
+            <com.xuexiang.xui.widget.imageview.RadiusImageView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/default_photo"
+                app:riv_border_color="@color/xui_config_color_gray_6"
+                app:riv_border_width="1px"
+                app:riv_is_circle="true"
+                app:riv_selected_border_color="@color/xui_config_color_gray_4"
+                app:riv_selected_border_width="1px"
+                app:riv_selected_mask_color="@color/xui_config_color_gray_8" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_username_main4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="默认昵称"
+                    android:textColor="@color/white"
+                    android:textSize="12pt" />
+
+                <TextView
+                    android:id="@+id/textView_phone_main4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="手机"
+                    android:textColor="@color/white"
+                    android:textSize="10pt" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/button_infodetail_main4"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:background="@drawable/imagebutton_click"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/ic_arrow_right_white"
+                tools:ignore="VectorDrawableCompat" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout_board_main4"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/linearlayout_info_main4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/background_round"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="听小方信息" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/supertextview_record_main4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftIconRes="@drawable/ic_grade"
+        app:sLeftTextString="成绩统计"
+        app:sRightIconRes="@drawable/ic_arrow_right_gray" />
+
+
+</LinearLayout>

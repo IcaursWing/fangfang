@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_mutipress"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_mutipress" />
+    <item
+        android:id="@+id/menu_muticontrol"
+        android:orderInCategory="101"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_muticontrol" />
+
+    <item
+        android:id="@+id/menu_mutiscan"
+        android:orderInCategory="102"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_scan" />
+
+</menu>

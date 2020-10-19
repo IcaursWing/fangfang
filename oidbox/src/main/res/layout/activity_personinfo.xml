@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.xuexiang.xui.widget.actionbar.TitleBar
+        android:id="@+id/titlebar_personinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xui_config_color_light_blue"
+        app:tb_leftImageResource="@drawable/xui_ic_navigation_back_white"
+        app:tb_titleText="个人信息"
+        app:tb_titleTextColor="@color/white" />
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/supertextview_photo_info"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:sLeftTextString="头像"
+        app:sRightIconRes="@drawable/ic_arrow_right_gray"
+        app:sRightTvDrawableHeight="80dp"
+        app:sRightTvDrawableRight="@drawable/default_photo"
+        app:sRightTvDrawableWidth="80dp"
+        app:sRightViewGravity="right_center" />
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/supertextview_username_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftTextString="昵称"
+        app:sLeftViewGravity="left_center"
+        app:sRightIconRes="@drawable/ic_arrow_right_gray"
+        app:sRightTextString="默认昵称"
+        app:sRightViewGravity="right_center" />
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/supertextview_phone_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftTextString="手机号"
+        app:sLeftViewGravity="left_center"
+        app:sRightIconRes="@drawable/ic_arrow_right_gray"
+        app:sRightTextString="默认手机号"
+        app:sRightViewGravity="right_center" />
+
+    <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+        android:id="@+id/supertextview_age_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:sLeftTextString="年龄"
+        app:sLeftViewGravity="left_center"
+        app:sRightIconRes="@drawable/ic_arrow_right_gray"
+        app:sRightTextString="0"
+        app:sRightViewGravity="right_center" />
+
+</LinearLayout>

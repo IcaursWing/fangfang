@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/voice_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/y240">
+        <ImageButton android:id="@id/backArrow" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/x30" android:layout_height="@dimen/x26" android:layout_marginLeft="@dimen/x5" android:layout_marginTop="@dimen/x5" android:src="@drawable/back_arrow" android:scaleType="fitCenter" />
+        <TextView android:id="@id/voice_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/x5" android:text="@string/voice_info" android:layout_alignParentRight="true" style="@style/text_style" />
+        <ImageButton android:id="@id/center_btn" android:background="@drawable/stop_btn" android:layout_width="@dimen/y50" android:layout_height="@dimen/y50" android:layout_centerInParent="true" />
+        <TextView android:id="@id/recognize_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/text_style" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/y160" android:layout_marginTop="@dimen/y240">
+        <ImageButton android:id="@id/recorder_btn" android:background="?selectableItemBackgroundBorderless" android:layout_width="@dimen/y80" android:layout_height="@dimen/y80" android:layout_marginTop="@dimen/x6" android:src="@drawable/voice_btn_btn" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

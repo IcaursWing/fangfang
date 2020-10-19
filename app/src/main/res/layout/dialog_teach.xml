@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_teach1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="前奏"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第一句"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第二句"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第三句：两只猴子爬到树上吃香蕉"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第四句：又有一只猴子跑来现在有几只"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第五句：三只猴子爬到树上吃香蕉"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第六句：又有一只猴子跑来现在有几只"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第七句：四只猴子爬到树上吃香蕉"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第八句：又有一只猴子跑来现在有几只"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第九句：有五只猴子爬到树上吃香蕉"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第十句：一不小心掉下一只，现在剩几只"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第十一句：有四只猴子爬到树上吃香蕉"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第十二句：一不小心掉下一只，现在剩几只"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第十三句：有三只猴子爬到树上吃香蕉"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第十四句：一不小心掉下一只，现在剩几只"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第十五句：有两只猴子爬到树上吃香蕉"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第十六句：一不小心掉下一只，现在剩几只"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第十七句：有一只猴子爬到树上吃香蕉"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_teach19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="第十八句：一不小心掉下一只，现在剩几只，剩下没饭吃"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_teachcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="退出(不要随意退出)"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/button_teachnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="下一动作" />
+    </LinearLayout>
+</LinearLayout>

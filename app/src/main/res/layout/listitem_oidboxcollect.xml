@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lv_oidboxcollect_ID_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小方方ID：" />
+
+        <TextView
+            android:id="@+id/lv_oidboxcollect_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lv_oidboxcollect_MAC_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAC：" />
+
+        <TextView
+            android:id="@+id/lv_oidboxcollect_MAC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ff:ff:ff:ff:ff:ff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lv_oidboxcollect_progress_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="采集进度：" />
+
+            <TextView
+                android:id="@+id/lv_oidboxcollect_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

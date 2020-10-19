@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_login"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText"
+        android:title="登录" />
+    <item
+        android:id="@+id/menu_muticontrol"
+        android:orderInCategory="101"
+        android:showAsAction="always|withText"
+        android:title="开始游戏" />
+
+    <item
+        android:id="@+id/menu_mutiscan"
+        android:orderInCategory="102"
+        android:showAsAction="always|withText"
+        android:title="@string/menu_scan" />
+
+</menu>

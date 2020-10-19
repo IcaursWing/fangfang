@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.main.yaokongche">
+
+    <Button
+        android:id="@+id/che_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="75dp"
+        android:text="左" />
+
+    <Button
+        android:id="@+id/che_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="44dp"
+        android:layout_toEndOf="@+id/che_left"
+        android:text="后" />
+
+    <Button
+        android:id="@+id/che_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/che_down"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="21dp"
+        android:layout_toEndOf="@+id/che_left"
+        android:text="前" />
+
+    <Button
+        android:id="@+id/che_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="75dp"
+        android:layout_toEndOf="@+id/che_down"
+        android:text="右" />
+
+    <TextView
+        android:id="@+id/textView_kong1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="29dp"
+        android:layout_toStartOf="@+id/seekBar_kong1"
+        android:text="底座（左—右）75°" />
+
+    <SeekBar
+        android:id="@+id/seekBar_kong1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="30dp"
+        android:max="150"
+        android:progress="75" />
+
+    <TextView
+        android:id="@+id/textView_kong2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_kong1"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toStartOf="@+id/seekBar_kong2"
+        android:text="右臂（后—前）85°" />
+
+    <SeekBar
+        android:id="@+id/seekBar_kong2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar_kong1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="50dp"
+        android:max="170"
+        android:progress="85" />
+
+    <TextView
+        android:id="@+id/textView_kong3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_kong2"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toStartOf="@+id/seekBar_kong2"
+        android:text="左臂（下—上）85°" />
+
+    <SeekBar
+        android:id="@+id/seekBar_kong3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar_kong2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="50dp"
+        android:max="170"
+        android:progress="85" />
+
+    <TextView
+        android:id="@+id/textView_kong4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_kong3"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toStartOf="@+id/seekBar_kong3"
+        android:text="手爪（开—关）45°" />
+
+    <SeekBar
+        android:id="@+id/seekBar_kong4"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar_kong3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="50dp"
+        android:max="90"
+        android:progress="45" />
+
+    <Button
+        android:id="@+id/che_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar_kong4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="模式二" />
+
+    <Spinner
+        android:id="@+id/che_spinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/action_spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="0dp"
+        android:entries="@array/che_list" />
+
+    <Button
+        android:id="@+id/che_dance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/che_track"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/che_track"
+        android:text="模式一" />
+
+    <Button
+        android:id="@+id/che_left_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="76dp"
+        android:background="#FF0000"
+        android:text="左"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/che_down_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="46dp"
+        android:layout_toEndOf="@+id/che_left_all"
+        android:background="#FF0000"
+        android:text="后"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/che_up_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/che_down_all"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/che_left_all"
+        android:background="#FF0000"
+        android:text="前"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/che_right_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="76dp"
+        android:layout_toEndOf="@+id/che_down_all"
+        android:background="#FF0000"
+        android:text="右"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/che_dance_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/che_dance"
+        android:layout_marginEnd="-88dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/che_dance"
+        android:background="#FF0000"
+        android:text="模式一"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/checkBox_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/che_spinner"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toEndOf="@+id/che_spinner"
+        android:text="全体" />
+
+    <Spinner
+        android:id="@+id/action_spinner"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/che_dance_all"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toStartOf="@+id/che_dance_all"
+        android:entries="@array/action_list" />
+
+
+</RelativeLayout>
