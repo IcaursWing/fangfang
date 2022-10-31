@@ -74,6 +74,11 @@ public class Login extends Activity implements CancelAdapt {
                                     public void run() {
                                         String state = response.getHeaders().getValue("state", 0);
 
+                                        if (state == null) {
+                                            Toast.makeText(Login.this, "服务器异常！", Toast.LENGTH_LONG).show();
+                                            return;
+                                        }
+
                                         if (state.equals("0")) {
                                             Toast.makeText(Login.this, "手机号未注册！", Toast.LENGTH_LONG).show();
 
